@@ -28,6 +28,8 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: kotlin-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
-          
+          name: kotlin-apk
+          path: |
+            **/build/outputs/apk/debug/*.apk
+            **/build/outputs/apk/release/*.apk
+            
